@@ -1,0 +1,25 @@
+.h1 {
+    font-size: 7.5vw !important;
+}
+.h2 {
+    font-size: 6vw !important;
+}
+.h3 {
+    font-size: 5vw !important;
+}
+.h4 {
+    font-size: 4vw !important;
+}
+.h5 {
+    font-size: 3.8vw !important;
+    font-weight: 400 !important;
+}
+
+#mce-EMAIL {
+    width: 90vw;
+    font-size: 12vw;
+}
+
+.g-slides {
+    width:60vw;
+}
