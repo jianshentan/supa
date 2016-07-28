@@ -55,8 +55,8 @@
 		
 		<!-- video -->
 		<% if (mobile == "true") { %>
-		<img src="images/logo_red.png" class="" style="margin:20px 50vw;transform:translateX(-65px);">
-		<iframe src="https://www.youtube.com/embed/4ndKeTleeEk" frameborder="0" allowfullscreen class="" style="
+		<img src="images/logo_red.png" class="" style="width:30vw;margin-left:35vw;margin-top:5vw;margin-bottom:5vw;">
+		<iframe src="https://player.vimeo.com/video/176611171" width="740" height="420" class="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="
 			margin-left:10vw;
 			margin-right:10vw;
 			width:80vw;
@@ -66,8 +66,8 @@
 		<% } else { %>
 		<div class="s-position-relative" style="height:90vh;">
 			<img src="images/logo_red.png" class="s-position-absolute s-center-x" style="margin-top:20px;">
-			<iframe src="https://player.vimeo.com/video/176611171" width="760" height="420" class="s-position-absolute s-center" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="
-				width:760px;
+			<iframe src="https://player.vimeo.com/video/176611171" width="740" height="420" class="s-position-absolute s-center" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="
+				width:750px;
 				height:420px;
 				border:3px solid #ff034b;
 				box-shadow:8px 8px 0px #06e2ff;"></iframe>
@@ -87,28 +87,44 @@
 			style="
 			border-top:3px solid #ff034b;
 			border-bottom:3px solid #ff034b;
-			height: 30vh;
+			height: 54vh;
 			width: 100vw;
 			background-color: white;"
 			<% } %>
 			>
-			<div class="container" style="padding-top:0px;text-align:center;">
+			<div class="container"<% if (mobile == "true") { %>style="padding-top:0px;text-align:center;margin-top:5vh;margin-bottom:5vh;"<% } else { %> style="padding-top:0px;text-align:center;" <% }%> >
 				<% if (mobile != "true") { %>
-				<div class="col-xs-1" class="s-position-relative" style="height:30vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
-				<% } %>
+				<div class="col-xs-1" class="s-position-relative" style="height:54vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
 				<div class="col-xs-10">
+				<% } else { %>
+				<div class="col-xs-12">
+				<% } %>
 					<div class="row">
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press1.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;"<% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press2.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press3.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press4.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press5.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press6.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press7.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:23px;margin-bottom:22px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press1.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;"<% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press2.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press3.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press4.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press5.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press6.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press7.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="55" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+					</div>
+					<% if (mobile != "true") { %> <br> <% } %>
+					<div class="row">
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award1.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;"<% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award2.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award3.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award4.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award5.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award6.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award7.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award8.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award9.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award10.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/award11.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> width="100" height="44" style="margin-top:10px;margin-bottom:10px;" <% } %>></div>
 					</div>
 				</div>
 				<% if (mobile != "true") { %>
-				<div class="col-xs-1" class="s-position-relative" style="height:30vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
+				<div class="col-xs-1" class="s-position-relative" style="height:54vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
 				<% } %>
 			</div>	
 		</div>
@@ -129,23 +145,27 @@
 		<br>
 		<br>
 		<% } else { %>
-		<div class="s-position-relative" style="height:90vh;">
-			<div class="s-position-absolute s-center" style="
-				width:760px;
-				height:420px;
-				background-color: white;
-				border:3px solid #ff034b;
-				text-align: center;
-				box-shadow:8px 8px 0px #06e2ff;">
-				<br>
-				<div class="s-position-relative h2" style="
-					text-align:center;
-					color: #ff034b;">
-					Get ready for SUPA power!
+		<div class="" style="
+			background-image: url('images/supa-tile.png');
+			" >
+			<div class="s-position-relative" style="height:90vh;">
+				<div class="s-position-absolute s-center" style="
+					width:760px;
+					height:420px;
+					background-color: white;
+					border:3px solid #ff034b;
+					text-align: center;
+					box-shadow:8px 8px 0px #06e2ff;">
+					<br>
+					<div class="s-position-relative h2" style="
+						text-align:center;
+						color: #ff034b;">
+						Get ready for SUPA power!
+					</div>
+					<br>
+					<br>
+					<img src="images/supa-icons.png" class="" style="text-align:center;width:80%;">
 				</div>
-				<br>
-				<br>
-				<img src="images/supa-icons.png" class="" style="text-align:center;width:80%;">
 			</div>
 		</div>
 		<% } %>
@@ -160,24 +180,69 @@
 			<div class="s-position-absolute s-center" style="width:80%;text-align:center;">
 				
 				<% if (mobile == "true") { %>
-				<div class="h4" style="
+				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm">
+		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
+						margin:0 auto;
+						width:60vw;
+						outline: none;
+						height:10vw;
+						line-height:10vw;
+						background-color:#ff034b;
+						border: 0px;
+						text-align: center;
+						color:white;"/>
+		      <button type="submit" style="
+		      	background-color: #06e2ff;
+		      	color: #ff034b;
+		      	border-radius:50%;
+		      	font-weight: 700;
+		      	border: 0px;
+		      	margin-left:20px;
+		      	height:10vw;
+		      	width:10vw;">GO</button>
+				</form>
+				<!--
+				<a href="https://confirmsubscription.com/h/r/6DA4F50242D42B84" target="_blank"><div class="h4" style="
 					margin:0 auto;
 					width:80vw;
 					height:60px;
 					line-height:60px;
 					background-color:#ff034b;
-					color:white;">example@gmail.com</div>
+					color:white;">Click to Subscribe!</div></a>-->
 				<div class="h3" style="color:#ff034b;margin-top:10px;">
 					Sign <img src="images/emoji1.png" height="32"> to  &nbsp; <img src="images/emoji2.png" height="32"> &nbsp; <img src="images/emoji3.png" height="32"> &nbsp; <img src="images/emoji4.png" height="32">
 				</div>
 				<% } else { %>
-				<div class="h4" style="
+				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm">
+		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
+						margin:0 auto;
+						width:50vw;
+						min-width:400px;
+						outline: none;
+						height:60px;
+						line-height:60px;
+						background-color:#ff034b;
+						border: 0px;
+						text-align: center;
+						color:white;"/>
+		      <button type="submit" style="
+		      	background-color: #06e2ff;
+		      	color: #ff034b;
+		      	border-radius:50%;
+		      	font-weight: 700;
+		      	border: 0px;
+		      	margin-left:20px;
+		      	height:60px;
+		      	width:60px;">GO</button>
+				</form>
+				<!--
+				<a href="https://confirmsubscription.com/h/r/6DA4F50242D42B84" target="_blank"><div class="h4" style="
 					margin:0 auto;
 					width:480px;
 					height:60px;
 					line-height:60px;
 					background-color:#ff034b;
-					color:white;">example@gmail.com</div>
+					color:white;">Click to Subscribe!</div></a>-->
 				<div class="h2" style="color:#ff034b;margin-top:10px;">
 					Sign <img src="images/emoji1.png" height="50"> to  &nbsp; <img src="images/emoji2.png" height="50"> &nbsp; <img src="images/emoji3.png" height="50"> &nbsp; <img src="images/emoji4.png" height="50">
 				</div>
