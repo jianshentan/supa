@@ -87,26 +87,25 @@
 			style="
 			border-top:3px solid #ff034b;
 			border-bottom:3px solid #ff034b;
-			height: 64vh;
 			width: 100vw;
 			background-color: white;"
 			<% } %>
 			>
 			<div class="container"<% if (mobile == "true") { %>style="padding-top:0px;text-align:center;margin-top:5vh;margin-bottom:5vh;"<% } else { %> style="padding-top:0px;text-align:center;" <% }%> >
 				<% if (mobile != "true") { %>
-				<div class="col-xs-1" class="s-position-relative" style="height:64vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
-				<div class="col-xs-10">
+				<div class="col-xs-2" class="s-position-relative" style="height:64vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
+				<div class="col-xs-8">
 				<% } else { %>
 				<div class="col-xs-12">
 				<% } %>
 					<div class="row">
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press1.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;"<% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press2.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press3.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press4.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press5.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press6.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
-						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-xs-3" <% } %>><img src="/images/press7.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:150px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press1.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;"<% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press2.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press3.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press4.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press5.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press6.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
+						<div <% if (mobile == "true") { %> class="col-xs-4"  <% } else { %> class="col-md-3 col-xs-4" <% } %>><img src="/images/press7.png" <% if (mobile == "true") { %> style="width:20vw;"<% } else { %> style="width:120px;margin-top:10px;margin-bottom:10px;" <% } %>></div>
 					</div>
 					<% if (mobile != "true") { %> <br> <% } %>
 					<div class="row">
@@ -124,7 +123,7 @@
 					</div>
 				</div>
 				<% if (mobile != "true") { %>
-				<div class="col-xs-1" class="s-position-relative" style="height:64vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
+				<div class="col-xs-2" class="s-position-relative" style="height:64vh"><img src="images/trophy.png" class="s-position-absolute s-center"></div>
 				<% } %>
 			</div>	
 		</div>
@@ -263,14 +262,14 @@
 				<a href="https://www.instagram.com/supa.ai" target="_blank"><img src="images/instagram.png" height="36"></a>
 				<br>
 				<br>
-				<div class=""><a href="mailto:softspot@moondial.com" target="_blank" style="color:white;">softspot@moondial.com</a></div>
+				<div class=""><a href="mailto:supa@supa.ai" target="_blank" style="color:white;">supa@supa.ai</a></div>
 				<br>
 				<div class="">SUPAspot inc. all rights reserved 2016</div>
 				<% } else { %>
 				<img src="images/logo_red.png" height="30">
 				<br>
 				<br>
-				<div class=""><a href="mailto:softspot@moondial.com" target="_blank" style="color:white;">softspot@moondial.com</a></div>
+				<div class=""><a href="mailto:supa@supa.ai" target="_blank" style="color:white;">supa@supa.ai</a></div>
 				<br>
 				<a href="" target="_blank"><img src="images/twitter.png" height="36"></a>
 				&nbsp;&nbsp;&nbsp;
