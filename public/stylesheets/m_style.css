@@ -23,3 +23,7 @@
 .g-slides {
     width:60vw;
 }
+
+body {
+    min-width: inherit !important;
+}

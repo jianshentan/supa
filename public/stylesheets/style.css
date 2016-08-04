@@ -28,6 +28,7 @@
 }
 body {
   background-size: 40px 40px;
+  min-width: 992px;
   background-image: linear-gradient(to right, #06e2ff 1px, transparent 1px), linear-gradient(to bottom, #06e2ff 1px, transparent 1px);
 }
 
