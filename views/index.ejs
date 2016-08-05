@@ -133,7 +133,7 @@
 							<div class="col-md-2 col-xs-2"><img src="/images/award3.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
 							<div class="col-md-2 col-xs-2"><img src="/images/award4.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
 							<div class="col-md-2 col-xs-2"><img src="/images/award5.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
-							<div class="col-md-2 col-xs-2"><img src="/images/award6.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
+							<!--<div class="col-md-2 col-xs-2"><img src="/images/award6.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>-->
 							<div class="col-md-2 col-xs-2"><img src="/images/award7.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
 							<div class="col-md-2 col-xs-2"><img src="/images/award8.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
 							<div class="col-md-2 col-xs-2"><img src="/images/award9.png" style="width:100px;margin-top:10px;margin-bottom:10px;"></div>
@@ -161,7 +161,7 @@
 					<div class="col-xs-4"><img src="/images/award3.png" style="width:20vw;margin:5px auto;"></div>
 					<div class="col-xs-4"><img src="/images/award4.png" style="width:20vw;margin:5px auto;"></div>
 					<div class="col-xs-4"><img src="/images/award5.png" style="width:20vw;margin:5px auto;"></div>
-					<div class="col-xs-4"><img src="/images/award6.png" style="width:20vw;margin:5px auto;"></div>
+					<!--<div class="col-xs-4"><img src="/images/award6.png" style="width:20vw;margin:5px auto;"></div>-->
 					<div class="col-xs-4"><img src="/images/award7.png" style="width:20vw;margin:5px auto;"></div>
 					<div class="col-xs-4"><img src="/images/award8.png" style="width:20vw;margin:5px auto;"></div>
 					<div class="col-xs-4"><img src="/images/award9.png" style="width:20vw;margin:5px auto;"></div>
@@ -196,14 +196,14 @@
 					background-color: white;
 					border:3px solid #ff034b;
 					text-align: center;
-					box-shadow:8px 8px 0px #06e2ff;">
+					box-shadow:8px 8px 0px #ff034b;">
 					<br>
 					<br>
 					<div class="s-position-relative h2" style="
 						text-align:center;
 						font-weight: 800;
 						color: #ff034b;">
-						SUPA wear + SUPA AI = SUPA powers
+						SUPA <span style="color:black">wear +</span> SUPA <span style="color:black">AI = </span>SUPA <span style="color:black">powers</span>
 					</div>
 					<br>
 					<br>
@@ -224,7 +224,7 @@
 			<div class="s-position-absolute s-center" style="width:80%;text-align:center;">
 				
 				<% if (mobile == "true") { %>
-				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm">
+				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm" style="text-align:center;">
 		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
 						margin:0 auto;
 						width:60vw;
@@ -236,15 +236,14 @@
 						text-align: center;
 						color:white;"/>
 		      <button type="submit" style="
-		      	background-color: #06e2ff;
-		      	color: #ff034b;
-		      	border-radius:50%;
-		      	font-weight: 700;
-		      	border: 0px;
-		      	margin-left:20px;
+		      	/*background-color: #06e2ff;*/
+		      	/*border-radius:50%;*/
+		      	display:inline-block;
 		      	height:10vw;
 		      	vertical-align:top;
-		      	width:10vw;">GO</button>
+		      	border:0px;
+		      	position:relative;
+		      	width:10vw;"><img src="images/go-button.png" style="top:0px;left:0px;position:absolute;height:10vw;"></button>
 				</form>
 				<!--
 				<a href="https://confirmsubscription.com/h/r/6DA4F50242D42B84" target="_blank"><div class="h4" style="
@@ -310,6 +309,8 @@
 			text-align: center;">
 			<div class="s-position-absolute s-center" style="width:80vw;">
 				<% if (mobile == "true") { %>
+				<img src="images/m_supa_head.png" height="30">
+				<br>
 				<br>
 				<a href="https://www.twitter.com/supa_ai" target="_blank"><img src="images/twitter.png" height="36"></a>
 				&nbsp;&nbsp;&nbsp;
@@ -318,9 +319,9 @@
 				<br>
 				<div class="" style="font-weight:700;"><a href="mailto:supa@supa.ai" target="_blank" style="color:white;">supa@supa.ai</a></div>
 				<br>
-				<div class="">SUPAspot inc. all rights reserved 2016</div>
+				<div class="">2016 © ️SUPASPOT INC. All rights reserved</div>
 				<% } else { %>
-				<img src="images/logo_red.png" height="30">
+				<img src="images/m_supa_head.png" height="30">
 				<br>
 				<br>
 				<div class="" style="font-weight:700;"><a href="mailto:supa@supa.ai" target="_blank" style="color:white;">supa@supa.ai</a></div>
