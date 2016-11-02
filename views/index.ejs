@@ -52,27 +52,203 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
 	<body>
+			
+		<!-- supa -->
+		<% if (mobile == "true") { %>
+		<div class="" style="background-color:#06e2ff;width:100%;">
+			<img src="images/m_supa_head.png" class="" style="width:30vw;margin-left:35vw;margin-top:5vw;margin-bottom:5vw;">
+		</div>
+		<br>
+		<div class="s-position-relative h2" style="
+			text-align:center;
+			color: #ff034b;
+			font-weight:800;">
+			<div style="display:inline-block;vertical-align:top;"><div class="">SUPA</div><div class="">wear</div></div> 
+			<div style="display:inline-block;margin-top:12px;">&nbsp;&nbsp;+&nbsp;&nbsp;</div>
+			<div style="display:inline-block;vertical-align:top;"><div class="">SUPA</div><div class="">AI</div></div>
+			<div style="display:inline-block;margin-top:12px;">&nbsp;&nbsp;=&nbsp;&nbsp;</div>
+			<div style="display:inline-block;vertical-align:top;"><div class="">SUPA</div><div class="">powers</div></div>
+			<!--UPA wear + SUPA AI = SUPA powers-->
+		</div>
+		<br>
+		<br>
+		<img src="images/supa-icons.png" class="" style="text-align:center;margin-left:5vw;width:90vw;">
+		<br>
+		<br>
+		<br>
+		<% } else { %>
+		<div class="" style="background-color:#ff034b;height:80px;border-bottom:4px solid white;">
+			<img src="images/header.png" class="s-position-absolute s-center-x" style="height:55px;margin-top:12px;">
+		</div>
+		<div class="" style="background-image: url('images/bg.png');background-color:#06e2ff;background-size:150px;" >
+			<div class="s-position-relative" style="height:90vh;min-height:600px;">
+				<div class="s-position-absolute s-center" style="
+					width:760px;
+					height:420px;
+					background-color: white;
+					border:4px solid #ff034b;
+					text-align: center;
+					box-shadow:8px 8px 0px #ff034b;">
+					<br>
+					<br>
+					<div class="s-position-relative h2" style="
+						text-align:center;
+						font-weight: 800;
+						color: #ff034b;">
+						SUPA <span style="color:black">wear +</span> SUPA <span style="color:black">AI = </span>SUPA <span style="color:black">powers</span>
+					</div>
+					<br>
+					<br>
+					<img src="images/supa-icons.png" class="" style="text-align:center;width:80%;">
+				</div>
+			</div>
+		</div>
+		<% } %>
 		
+		<!-- sign up -->
+		<div class="s-position-relative" style="
+			height: 40vh;
+			border-top:4px solid #ff034b;
+			border-bottom:4px solid #ff034b;
+			min-height: 240px;
+			width: 100%;
+			z-index: 100;
+			background-color: white;">
+			<div class="s-position-absolute s-center" style="width:80%;text-align:center;">
+				
+				<% if (mobile == "true") { %>
+				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm" style="text-align:center;">
+		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
+						margin:0 auto;
+						width:60vw;
+						outline: none;
+						height:10vw;
+						line-height:10vw;
+						background-color:#ff034b;
+						border: 0px;
+						text-align: center;
+						color:white;"/>
+		      <button type="submit" style="
+		      	/*background-color: #06e2ff;*/
+		      	/*border-radius:50%;*/
+		      	display:inline-block;
+		      	height:10vw;
+		      	vertical-align:top;
+		      	border:0px;
+		      	position:relative;
+		      	width:10vw;"><img src="images/go-button.png" style="top:0px;left:0px;position:absolute;height:10vw;"></button>
+				</form>
+				<div class="h3" style="color:#ff034b;margin-top:10px;font-weight:800;">
+					Sign <img src="images/emoji1.png" height="32"> for  &nbsp; <img src="images/emoji3.png" height="32"> &nbsp; app <img src="images/emoji4.png" height="38">
+				</div>
+				<% } else { %>
+				<br> <form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm">
+		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
+						margin:0 auto;
+						width:50vw;
+						min-width:400px;
+						max-width:680px;
+						outline: none;
+						height:60px;
+						line-height:60px;
+						background-color:#ff034b;
+						border: 0px;
+						text-align: center;
+						font-size: 24px;
+						font-weight: 700;
+						color:white;"/>
+		      <button type="submit" style="
+		      	background-color: #06e2ff;
+		      	color: #ff034b;
+		      	border-radius:50%;
+		      	font-weight: 700;
+		      	border: 0px;
+		      	margin-left:20px;
+		      	height:60px;
+						font-size: 24px;
+		      	vertical-align:top;
+		      	width:60px;">GO</button>
+				</form>
+				<div class="h2" style="color:#ff034b;margin-top:10px;font-weight:800;">
+					Sign <img src="images/emoji1.png" height="50"> for &nbsp;<img src="images/emoji3.png" height="50"> &nbsp; app <img src="images/emoji4.png" height="60">
+				</div>
+				<br>
+				<% } %>
+			</div>
+		</div>
+		
+		<!-- print all over me -->
+		<% if (mobile == "true") { %>
+		<div class="" style="text-align: center;">
+			<br><br>
+			<img src="/images/supaxpoam.png" style="width: 80vw;">
+			<br><br>
+			<img src="/images/poam_jumper.png" style="width: 40vw;">
+			<br><br>
+			<a target="_blank" href="https://paom.com/designer/supa"><div class="" style="
+				border: 4px solid #ff034b;
+				padding: 8px 60px;	
+				display: inline-block;
+				color: #ff034b;
+				font-weight: 800;
+				font-size: 1.6em;
+				background-color: white;
+				box-shadow: 8px 8px 0px #ff034b;
+				">BUY NOW!</div></a>
+			<br><br><br>
+		</div>
+		<% } else { %>
+		<div class="" style="background-color:white;">
+			<div class="container" style="padding-top:0px">
+				<div class="row" style="margin-left:0px;margin-right:0px;">
+					<div class="col-xs-6" style="
+						text-align: center;
+						display: inline-block;
+						vertical-align: middle;
+						max-height: 500px;
+						float: none;
+						"><img src="/images/poam_image.jpg" style="margin-top:-80px;"></div><!--
+					--><div class="col-xs-6" style="
+						text-align: center;
+						display: inline-block;
+						vertical-align: middle;
+						float: none;
+						">
+						<div class=""><img src="/images/supaxpoam.png"></div>	
+						<br>
+						<a href="https://paom.com/designer/supa" target="_blank"><div class="" style="
+							border: 4px solid #ff034b;
+							padding: 10px 60px;	
+							display: inline-block;
+							color: #ff034b;
+							font-weight: 800;
+							font-size: 2em;
+							background-color: white;
+							box-shadow: 8px 8px 0px #ff034b;
+							">BUY NOW!</div></a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<% } %>
+			
 		<!-- video -->
 		<% if (mobile == "true") { %>
-		<div style="background-color:#06e2ff;padding-bottom:7vh;">
-			<img src="images/m_supa_head.png" class="" style="width:30vw;margin-left:35vw;margin-top:5vw;margin-bottom:5vw;">
+		<div style="background-color:#06e2ff;padding-bottom:7vh;padding-top:7vh;">
 			<iframe src="https://player.vimeo.com/video/176656779" width="740" height="420" class="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="
 				margin-left:10vw;
 				margin-right:10vw;
 				width:80vw;
 				height:45vw;
-				border:3px solid #ff034b;
+				border:4px solid #ff034b;
 				box-shadow:8px 8px 0px #ff034b;"></iframe>	
 		</div>
 		<% } else { %>
-		<div class="s-position-relative" style="height:90vh;min-height:600px;background-color:#06e2ff;">
-			<img src="images/supa_head.png" class="s-position-absolute s-center-x" style="margin-top:20px;">
+		<div class="s-position-relative" style="height:90vh;min-height:600px;background-color:#06e2ff;background-image:url('/images/bg.png');background-size:150px;">
 			<iframe src="https://player.vimeo.com/video/176656779" width="740" height="420" class="s-position-absolute s-center" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="
-				margin-top: 20px;
 				width:750px;
 				height:420px;
-				border:3px solid #ff034b;
+				border:4px solid #ff034b;
 				box-shadow:8px 8px 0px #ff034b;"></iframe>
 		</div>
 		<% } %>
@@ -81,20 +257,22 @@
 		<div class="s-position-relative" 
 			<% if (mobile == "true") { %>
 			style="
-			border-top:3px solid #ff034b;
-			border-bottom:3px solid #ff034b;
+			border-top:4px solid #ff034b;
+			border-bottom:4px solid #ff034b;
 			width: 100vw;
 			background-color: white;"
 			<% } else { %>
 			style="
-			border-top:3px solid #ff034b;
-			border-bottom:3px solid #ff034b;
+			border-top:4px solid #ff034b;
+			border-bottom:4px solid #ff034b;
 			width: 100%;
 			background-color: white;"
 			<% } %>
 			>
 			<div class="container"<% if (mobile == "true") { %>style="padding-top:0px;text-align:center;margin-top:5vh;margin-bottom:5vh;"<% } else { %> style="padding-top:0px;text-align:center;" <% }%> >
 				<% if (mobile != "true") { %>
+				<br>
+				<br>
 				<div class="row">
 					<div class="col-xs-2">
 						<br>
@@ -148,6 +326,8 @@
 						<br>
 					</div>
 				</div>
+				<br>
+				<br>
 				<% } else { %>
 				<div class="row">
 					<div class="col-xs-4"><img src="/images/press1.png" style="width:20vw;margin:5px auto;"></div>
@@ -171,141 +351,7 @@
 				<% } %>
 			</div>	
 		</div>
-		
-		<!-- supa -->
-		<% if (mobile == "true") { %>
-		<br>
-		<div class="s-position-relative h2" style="
-			text-align:center;
-			color: #ff034b;
-			font-weight:800;">
-			<div style="display:inline-block;vertical-align:top;"><div class="">SUPA</div><div class="">wear</div></div> 
-			<div style="display:inline-block;margin-top:12px;">&nbsp;&nbsp;+&nbsp;&nbsp;</div>
-			<div style="display:inline-block;vertical-align:top;"><div class="">SUPA</div><div class="">AI</div></div>
-			<div style="display:inline-block;margin-top:12px;">&nbsp;&nbsp;=&nbsp;&nbsp;</div>
-			<div style="display:inline-block;vertical-align:top;"><div class="">SUPA</div><div class="">powers</div></div>
-			<!--UPA wear + SUPA AI = SUPA powers-->
-		</div>
-		<br>
-		<br>
-		<img src="images/supa-icons.png" class="" style="text-align:center;margin-left:5vw;width:90vw;">
-		<br>
-		<br>
-		<br>
-		<% } else { %>
-		<div class="" style="background-image: url('images/supa-tile.png');" >
-			<div class="s-position-relative" style="height:90vh;min-height:600px;">
-				<div class="s-position-absolute s-center" style="
-					width:760px;
-					height:420px;
-					background-color: white;
-					border:3px solid #ff034b;
-					text-align: center;
-					box-shadow:8px 8px 0px #ff034b;">
-					<br>
-					<br>
-					<div class="s-position-relative h2" style="
-						text-align:center;
-						font-weight: 800;
-						color: #ff034b;">
-						SUPA <span style="color:black">wear +</span> SUPA <span style="color:black">AI = </span>SUPA <span style="color:black">powers</span>
-					</div>
-					<br>
-					<br>
-					<img src="images/supa-icons.png" class="" style="text-align:center;width:80%;">
-				</div>
-			</div>
-		</div>
-		<% } %>
-		
-		<!-- sign up -->
-		<div class="s-position-relative" style="
-			border-top:3px solid #ff034b;
-			border-bottom:3px solid #ff034b;
-			height: 30vh;
-			min-height: 240px;
-			width: 100%;
-			background-color: white;">
-			<div class="s-position-absolute s-center" style="width:80%;text-align:center;">
-				
-				<% if (mobile == "true") { %>
-				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm" style="text-align:center;">
-		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
-						margin:0 auto;
-						width:60vw;
-						outline: none;
-						height:10vw;
-						line-height:10vw;
-						background-color:#ff034b;
-						border: 0px;
-						text-align: center;
-						color:white;"/>
-		      <button type="submit" style="
-		      	/*background-color: #06e2ff;*/
-		      	/*border-radius:50%;*/
-		      	display:inline-block;
-		      	height:10vw;
-		      	vertical-align:top;
-		      	border:0px;
-		      	position:relative;
-		      	width:10vw;"><img src="images/go-button.png" style="top:0px;left:0px;position:absolute;height:10vw;"></button>
-				</form>
-				<!--
-				<a href="https://confirmsubscription.com/h/r/6DA4F50242D42B84" target="_blank"><div class="h4" style="
-					margin:0 auto;
-					width:80vw;
-					height:60px;
-					line-height:60px;
-					background-color:#ff034b;
-					color:white;">Click to Subscribe!</div></a>-->
-				<div class="h3" style="color:#ff034b;margin-top:10px;">
-					Sign <img src="images/emoji1.png" height="32"> to  &nbsp; <img src="images/emoji2.png" height="32"> &nbsp; <img src="images/emoji3.png" height="32"> &nbsp; <img src="images/emoji4.png" height="32">
-				</div>
-				<% } else { %>
-				<form action="http://moondialgmbh.createsend.com/t/r/s/hujtkii/" method="post" id="subForm">
-		      <input id="fieldEmail" name="cm-hujtkii-hujtkii" type="email" placeholder="your@email.com" required style="
-						margin:0 auto;
-						width:50vw;
-						min-width:400px;
-						max-width:680px;
-						outline: none;
-						height:60px;
-						line-height:60px;
-						background-color:#ff034b;
-						border: 0px;
-						text-align: center;
-						font-size: 24px;
-						font-weight: 700;
-						color:white;"/>
-		      <button type="submit" style="
-		      	background-color: #06e2ff;
-		      	color: #ff034b;
-		      	border-radius:50%;
-		      	font-weight: 700;
-		      	border: 0px;
-		      	margin-left:20px;
-		      	height:60px;
-						font-size: 24px;
-		      	vertical-align:top;
-		      	width:60px;">GO</button>
-				</form>
-				<!--
-				<a href="https://confirmsubscription.com/h/r/6DA4F50242D42B84" target="_blank"><div class="h4" style="
-					margin:0 auto;
-					width:480px;
-					height:60px;
-					line-height:60px;
-					background-color:#ff034b;
-					color:white;">Click to Subscribe!</div></a>-->
-				<div class="h2" style="color:#ff034b;margin-top:10px;">
-					Sign <img src="images/emoji1.png" height="50"> to  &nbsp; <img src="images/emoji2.png" height="50"> &nbsp; <img src="images/emoji3.png" height="50"> &nbsp; <img src="images/emoji4.png" height="50">
-				</div>
-				<% } %>
-				
-				
-			</div>
-		</div>
-		
+
 		<!-- footer -->
 		<div class="s-position-relative" style="
 			background-color: #06e2ff;
@@ -336,7 +382,7 @@
 				<a href="https://www.instagram.com/supa.ai" target="_blank"><img src="images/instagram.png" height="36"></a>
 				<br>
 				<br>
-				<div class="" style="font-weight:700;"><strong>2016 © ️SUPASPOT INC. All rights reserved.</strong></div>
+				<div class="" style="font-weight:700;"><strong>2016 © SUPASPOT INC. All rights reserved.</strong></div>
 				<% } %>
 			</div>
 		</div>
