@@ -10,4 +10,16 @@ router.get('/', function(req, res, next) {
   }
 });
 
+router.get('/faq', function(req, res, next) {
+  res.render('faq');  
+});
+
+router.get('/terms-and-conditions', function(req, res, next) {
+  res.render('terms');  
+});
+
+router.get('/privacy-policy', function(req, res, next) {
+  res.render('privacy');  
+});
+
 module.exports = router;
